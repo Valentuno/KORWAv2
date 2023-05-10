@@ -21,6 +21,7 @@
         <Rectangle Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="3" Margin="0,735,0,0" Stroke="Black" VerticalAlignment="Top" Width="1014" Fill="White"/>
         <Button x:Name="Zmiana" Content="Baza" HorizontalAlignment="Left" Margin="481,642,0,0" VerticalAlignment="Top" Width="108" Background="#FFC11023" BorderBrush="#FFAF7E3F" Foreground="White" FontFamily="Gill Sans MT" FontSize="20" FontWeight="Bold" Height="43" Click="Zmiana_Click" Grid.ColumnSpan="3" RenderTransformOrigin="3.896,0.455"/>
         <Button x:Name="KalkulaotrPage_BTN" Content="Kalkulator" HorizontalAlignment="Left" Margin="288,642,0,0" VerticalAlignment="Top" Width="108" Background="#FFC11023" BorderBrush="#FFAF7E3F" Foreground="White" FontFamily="Gill Sans MT" FontSize="20" FontWeight="Bold" Height="43" Click="KalkulaotrPage_BTN_Click" Grid.ColumnSpan="3"/>
+        <Button x:Name="Zmiana_Copy" Content="Baza" HorizontalAlignment="Left" Margin="669,642,0,0" VerticalAlignment="Top" Width="108" Background="#FFC11023" BorderBrush="#FFAF7E3F" Foreground="White" FontFamily="Gill Sans MT" FontSize="20" FontWeight="Bold" Height="43" Click="Zmiana_Click" Grid.ColumnSpan="3" RenderTransformOrigin="3.896,0.455"/>
 
     </Grid>
 </Window>
