@@ -22,6 +22,7 @@
         <Button x:Name="Zmiana" Content="Baza" HorizontalAlignment="Left" Margin="481,642,0,0" VerticalAlignment="Top" Width="108" Background="#FFC11023" BorderBrush="#FFAF7E3F" Foreground="White" FontFamily="Gill Sans MT" FontSize="20" FontWeight="Bold" Height="43" Click="Zmiana_Click" Grid.ColumnSpan="3" RenderTransformOrigin="3.896,0.455"/>
         <Button x:Name="KalkulaotrPage_BTN" Content="Kalkulator" HorizontalAlignment="Left" Margin="288,642,0,0" VerticalAlignment="Top" Width="108" Background="#FFC11023" BorderBrush="#FFAF7E3F" Foreground="White" FontFamily="Gill Sans MT" FontSize="20" FontWeight="Bold" Height="43" Click="KalkulaotrPage_BTN_Click" Grid.ColumnSpan="3"/>
         <Button x:Name="Zmiana_Copy" Content="Page3" HorizontalAlignment="Left" Margin="669,642,0,0" VerticalAlignment="Top" Width="108" Background="#FFC11023" BorderBrush="#FFAF7E3F" Foreground="White" FontFamily="Gill Sans MT" FontSize="20" FontWeight="Bold" Height="43" Click="Zmiana_Click" Grid.ColumnSpan="3" RenderTransformOrigin="3.896,0.455"/>
+        <Button x:Name="Zmiana_Copy1" Content="Page3" HorizontalAlignment="Left" Margin="816,642,0,0" VerticalAlignment="Top" Width="108" Background="#FFC11023" BorderBrush="#FFAF7E3F" Foreground="White" FontFamily="Gill Sans MT" FontSize="20" FontWeight="Bold" Height="43" Click="Zmiana_Click" Grid.ColumnSpan="3" RenderTransformOrigin="3.896,0.455"/>
 
     </Grid>
 </Window>
