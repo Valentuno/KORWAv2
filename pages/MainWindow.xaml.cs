@@ -30,5 +30,10 @@ namespace pages
         {
             Obiekt.Content = new Page2();
         }
+
+        private void KalkulaotrPage_BTN_Click(object sender, RoutedEventArgs e)
+        {
+            Obiekt.Content = new Page1();
+        }
     }
 }
