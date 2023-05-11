@@ -24,7 +24,8 @@
             </ListView.View>
 
         </ListView>
-        <ListBox x:Name="TEST_LB" HorizontalAlignment="Left" Height="100" Margin="105,658,0,0" VerticalAlignment="Top" Width="696" RenderTransformOrigin="0.355,-0.145"/>
 
+        <ListBox x:Name="TEST_LB" HorizontalAlignment="Left" Height="100" Margin="105,658,0,0" VerticalAlignment="Top" Width="696" RenderTransformOrigin="0.355,-0.145"/>
+        
     </Grid>
 </Page>

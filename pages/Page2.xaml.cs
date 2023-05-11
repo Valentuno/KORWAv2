@@ -20,44 +20,25 @@ namespace pages
     /// </summary>
     public partial class Page2 : Page
     {
-
-        public class Program
+        public Alkohol[] alkohols = new Alkohol[]
         {
-            public static void Main(string[] args)
-
-            {
-
-                Alkohol[] alkohols = new Alkohol[]
-                        {
-            new Alkohol(0,"Harnas","15g/zl","5","Zdjecia/harnas.jpg"),
-            new Alkohol(1,"Halne","20g/zl","3","Zdjecia/halne.jpg"),
-
-                        };
-                Random rnd = new Random();
-                int index = rnd.Next(alkohols.Length);
-                 Alkohol wylosowanyAlkohol = alkohols[index];
-
-                 string b1 = wylosowanyAlkohol.Title;
-            }
-            
-
-
-
-        }
-        Alkohol[] alkohols = new Alkohol[]
-        {
-            new Alkohol(0,"Harnas","15g/zl","5","Zdjecia/harnas.jpg"),
-            new Alkohol(1,"Halne","20g/zl","3","Zdjecia/halne.jpg"),
-
+        new Alkohol(0,"Harnas","15g/zl","5","Zdjecia/harnas.jpg"),
+        new Alkohol(1,"Halne","20g/zl","3","Zdjecia/halne.jpg")
         };
-        // Random rnd = new Random();
-        // int index = rnd.Next(alkohols.Length);
 
         public Page2()
         {
             InitializeComponent();
 
+            Random rnd = new Random();
+            int index = rnd.Next(alkohols.Length);
+            Alkohol wylosowanyAlkohol = alkohols[index];
+
+            string b1 = wylosowanyAlkohol.Title;
+
             Mylist.ItemsSource = alkohols;
+
+            TEST_LB.Items.Add(b1);
         }
     }
 }
