@@ -25,14 +25,9 @@ namespace pages
             InitializeComponent();
         }
 
-        private void BTN_Strzal_Click(object sender, RoutedEventArgs e)
+        public void BTN_Strzal_Click(object sender, RoutedEventArgs e)
         {
-            Random Strzal = new Random();
-            int a1 = Strzal.Next(1, 31);
-            for ()
-            LB_strzal.Items.Clear();
-
-            LB_strzal.Items.Add(a1.ToString());
+            LB_strzal.Items.Add();
         }
     }
 }
