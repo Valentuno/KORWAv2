@@ -27,7 +27,7 @@ namespace pages
 
         public void BTN_Strzal_Click(object sender, RoutedEventArgs e)
         {
-            LB_strzal.Items.Add();
+          
         }
     }
 }
