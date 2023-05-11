@@ -35,5 +35,10 @@ namespace pages
         {
             Obiekt.Content = new Page1();
         }
+
+        private void BTN_Strzal_Click(object sender, RoutedEventArgs e)
+        {
+            Obiekt.Content = new Page3();
+        }
     }
 }

@@ -74,3 +74,5 @@ C:\Users\User\Desktop\KORWA511\pages\obj\Debug\pages.csproj.GenerateResource.cac
 C:\Users\User\Desktop\KORWA511\pages\obj\Debug\pages.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\KORWA511\pages\obj\Debug\pages.exe
 C:\Users\User\Desktop\KORWA511\pages\obj\Debug\pages.pdb
+C:\Users\User\Desktop\KORWA511\pages\obj\Debug\Page3.g.cs
+C:\Users\User\Desktop\KORWA511\pages\obj\Debug\Page3.baml

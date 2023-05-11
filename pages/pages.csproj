@@ -76,6 +76,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Page3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Page1.xaml.cs">
@@ -83,6 +87,9 @@
     </Compile>
     <Compile Include="Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page3.xaml.cs">
+      <DependentUpon>Page3.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -112,6 +119,15 @@
   <ItemGroup>
     <Folder Include="Alkohole\" />
     <Folder Include="Zdjecia\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo korwa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vodka.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
