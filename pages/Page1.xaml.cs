@@ -31,9 +31,21 @@ namespace pages
                 double pojemnosc = Convert.ToDouble(pojemnosc_box.Text);
                 double procent = Convert.ToDouble(procent_box.Text);
                 double cena = Convert.ToDouble(cena_box.Text);
-                if (pojemnosc < 1 || procent < 0 || cena < 0.01)
+                if (pojemnosc < 1)
                 {
-                    throw new ArgumentException("Nieprawidłowe wartości");
+                    throw new ArgumentException("z pustego to nawet Salomon nie naleje");
+                }
+                if ( procent > 100)
+                {
+                    throw new ArgumentException("co ty walisz, paliwo rakietowe?");
+                }
+                if (procent < 0.01)
+                {
+                    throw new ArgumentException("bezalkoholowe? nie bądź miękka faja");
+                }
+                if (cena < 0.01)
+                {
+                    throw new ArgumentException("gratis to uczciwa cena");
                 }
                 else
                 {
@@ -48,12 +60,20 @@ namespace pages
             {
                 MessageBox.Show("Błędny format podanych wartości", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            catch (ArgumentException)
+            catch (ArgumentException ex)
             {
-                MessageBox.Show("Nieprawidłowe wartości.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message, "Błąd", MessageBoxButton.OK, MessageBoxImage.Information);
             }
+
         }
 
-       
+        private void wyczyść_Click(object sender, RoutedEventArgs e)
+        {
+            pojemnosc_box.Clear();
+            procent_box.Clear();
+            cena_box.Clear();
+            zl_box.Clear();
+            etanol_box.Clear();
+        }
     }
 }

@@ -16,29 +16,23 @@ using System.Windows.Shapes;
 namespace pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page3 : Page
     {
-        public MainWindow()
+        public Page3()
         {
             InitializeComponent();
-            Obiekt.Content = new Page1();
-        }
-
-        private void Zmiana_Click(object sender, RoutedEventArgs e)
-        {
-            Obiekt.Content = new Page2();
-        }
-
-        private void KalkulaotrPage_BTN_Click(object sender, RoutedEventArgs e)
-        {
-            Obiekt.Content = new Page1();
         }
 
         private void BTN_Strzal_Click(object sender, RoutedEventArgs e)
         {
-            Obiekt.Content = new Page3();
+            Random Strzal = new Random();
+            int a1 = Strzal.Next(1, 31);
+            for ()
+            LB_strzal.Items.Clear();
+
+            LB_strzal.Items.Add(a1.ToString());
         }
     }
 }
