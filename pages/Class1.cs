@@ -12,16 +12,15 @@ namespace pages
         public string Title { get; set; }
         public string Rent { get; set; }
         public string Ocena { get; set; }
-        public string Zdjecie { get; set; }
 
 
-        public Alkohol(int alkoholid, string title, string rent, string ocena, string zdjecie)
+        public Alkohol(int alkoholid, string title, string rent, string ocena)
         {
             Title = title;
             Rent = rent;
             Ocena = ocena;
             AlkoholId = alkoholid;
-            Zdjecie = zdjecie;
+            
         }
     }
 }

@@ -22,8 +22,8 @@ namespace pages
     {
         public Alkohol[] alkohols = new Alkohol[]
         {
-        new Alkohol(0,"Harnas","15g/zl","5","Zdjecia/harnas.jpg"),
-        new Alkohol(1,"Halne","20g/zl","3","Zdjecia/halne.jpg")
+        new Alkohol(0,"Harnas","15g/zl","5"),
+        new Alkohol(1,"Halne","20g/zl","3")
         };
 
         public Page2()
