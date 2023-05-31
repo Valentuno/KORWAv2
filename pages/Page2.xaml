@@ -8,14 +8,34 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid Width="1024" Height="768" Margin="0,0,-224,-318" VerticalAlignment="Top" HorizontalAlignment="Left" Background="White">
 
-        <ListView x:Name="Mylist" Margin= "0,0,0,150" Background="White" HorizontalAlignment="Center">
+
+
+    <Grid Width="1024" Height="768" Margin="0,0,-224,-318" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1.25,1.5" StartPoint="-0.25,0">
+                <GradientStop Color="#FF00174F" Offset="0"/>
+                <GradientStop Color="#FFDCE8EF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <ListView x:Name="Mylist" Margin= "105,10,74,186" HorizontalAlignment="Center" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="845">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </ListView.ItemContainerStyle>
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
-                        <GridViewColumn Header="Nazwa" DisplayMemberBinding="{Binding Title}" Width="200"  />
-                        <GridViewColumn Header="Rent" DisplayMemberBinding="{Binding Rent}" Width="200"/>
+                        <GridViewColumn Header="Nazwa" Width="200">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Title}" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Rentowność" DisplayMemberBinding="{Binding Rent}" Width="200"/>
                         <GridViewColumn Header="Ocena" DisplayMemberBinding="{Binding Ocena}" Width="200"/>
                         <GridViewColumn Header="ID" DisplayMemberBinding="{Binding AlkoholId}" Width="200"/>
                         <GridViewColumn DisplayMemberBinding="{Binding Zdjecie}"/>
@@ -26,6 +46,6 @@
         </ListView>
 
         <ListBox x:Name="TEST_LB" HorizontalAlignment="Left" Height="100" Margin="105,658,0,0" VerticalAlignment="Top" Width="696" RenderTransformOrigin="0.355,-0.145"/>
-        
+
     </Grid>
 </Page>
